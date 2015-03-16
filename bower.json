@@ -1,0 +1,22 @@
+{
+  "name": "pro-angular",
+  "version": "0.0.0",
+  "authors": [
+    "Ankeet Maini <ankeet.maini@gmail.com>"
+  ],
+  "description": "A sample app to learn Angular and Broccoli.",
+  "license": "MIT",
+  "homepage": "ankeetmaini.wordpress.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.14",
+    "bootstrap": "~3.3.4"
+  }
+}

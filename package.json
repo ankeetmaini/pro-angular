@@ -1,0 +1,18 @@
+{
+  "name": "pro-angular",
+  "version": "1.0.0",
+  "description": "A sample app to learn Angular and Broccoli.",
+  "main": "Brocfile.js",
+  "dependencies": {
+    "broccoli": "^0.15.0",
+    "broccoli-bower": "^0.2.1",
+    "broccoli-merge-trees": "^0.2.1",
+    "broccoli-concat": "^0.0.13"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ankeet Maini <ankeet.maini@gmail.com>",
+  "license": "ISC"
+}
