@@ -10,7 +10,7 @@ var sourceTrees = [app, styles].concat(bowerDependencies());
 
 // creating another tree as the plugins take input
 // a single tree and not array of trees
-var dependencyTree = mergeTrees(sourceTrees);
+var dependencyTree = mergeTrees(sourceTrees, {overwrite: true});
 
 // concatenating all js files
 var javascripts = concat(dependencyTree, {
