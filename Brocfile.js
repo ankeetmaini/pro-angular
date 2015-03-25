@@ -14,7 +14,7 @@ var dependencyTree = mergeTrees(sourceTrees, {overwrite: true});
 
 // concatenating all js files
 var javascripts = concat(dependencyTree, {
-  inputFiles: ['**/*.js'],
+  inputFiles: ['**/jquery.js', '**/*.js'],
   outputFile: '/assets/app.js'
 });
 
