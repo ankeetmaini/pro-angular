@@ -5,7 +5,7 @@ var model = {
 var todoApp = angular.module("todoApp", []);
 
 todoApp.run(function ($http) {
-  $http.get('todo.json').success(function (data) {
+  $http.get('json/todo.json').success(function (data) {
     model.items = data;
   });
 });
@@ -28,7 +28,8 @@ todoApp.controller('ToDoCtrl', function ($scope) {
 
   $scope.incompleteCount = function () {
     var count = 0;
-    $scope.todo.items.forEach(function (todo) {
+
+    angular.forEach($scope.todo.items, function (todo) {
       if (!todo.done) count++;
     });
 
