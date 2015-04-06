@@ -1,6 +1,7 @@
-angular.module('sportsStore', [])
-  .controller('SportsStoreController', [function ($scope) {
-    this.data = {
+angular.module('sportsStore', ['customFilters'])
+  .controller('SportsStoreController', function ($scope) {
+
+    $scope.data = {
       products: [
           { name: "Product #1", description: "A product",
           category: "Category #1", price: 100 },
@@ -12,4 +13,4 @@ angular.module('sportsStore', [])
           category: "Category #3", price: 202 }
         ]
       };
-  }]);
+  });

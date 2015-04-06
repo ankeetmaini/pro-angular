@@ -16,10 +16,8 @@ var bowerFiles = funnel('bower_components', {
 // a single tree and not array of trees
 var dependencyTree = mergeTrees(sourceTrees, {overwrite: true});
 
-// concatenating all js files
-var javascripts = concat(dependencyTree, {
-  inputFiles: ['**/*.js'],
-  outputFile: '/assets/app.js'
+var javascripts = funnel(app, {
+  destDir: 'assets/js'
 });
 
 var css = concat(dependencyTree, {
